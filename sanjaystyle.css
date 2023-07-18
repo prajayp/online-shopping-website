@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+::selection{
+  color: #000;
+  background: #fff;
+}
+* {
+  box-sizing: border-box;
+}
+nav{
+  position: fixed;
+  background: black;
+  width: 100%;
+  padding: 1px 0;
+  z-index: 12;
+}
+nav .menu{
+  max-width: 1250px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.menu .logo a{
+  text-decoration: none;
+  color: white;
+  font-size: 35px;
+  font-weight: 600;
+}
+.menu ul{
+  display: inline-flex;
+}
+.menu ul li{
+  list-style: none;
+  margin-left: 7px;
+}
+.menu ul li:first-child{
+  margin-left: 0px;
+}
+.menu ul li a{
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.menu ul li a:hover{
+  background: white;
+  color: black;
+}
+.img{
+  background: url('wallpaperflare.com_wallpaper.jpg')no-repeat;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.img::before{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+.center{
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 0 20px;
+  text-align: center;
+}
+.center .title{
+  color: #fff;
+  font-size: 55px;
+  font-weight: 600;
+}
+.center .sub_title{
+  color: red;
+  font-size: 52px;
+  font-weight: 600;
+}
+.box{
+  position: relative;
+  top: 65%;
+}
+
+.input {
+  padding: 10px;
+  width: 350px;
+  height: 35px;
+  background: none;
+  border: 2px solid white;
+  border-radius: 10px;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+  font-size: 16px;
+  color: #4c2dff;
+  outline: none;
+  transition: .5s;
+  margin-left: 290px;
+}
+.box:hover input{
+  width: 250px;
+  border-radius: 10px;
+}
+.box i{
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translate(-50%,-50%);
+  font-size: 24px;
+  color: white;
+  transition: .2s;
+}
+.box:hover i{
+  opacity: 0;
+  z-index: -1;
+}
+.imp{
+  position:relative;
+  left:25%;
+}
+.signup{
+  padding:0 ;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  height:27px;
+  background-color:  rgb(255, 94, 0);
+  border-radius: 1px;
+  display: inline-flex;
+}
+.row{
+	display:flex;
+	align-items:center;
+	flex-wrap:wrap;
+	justify-content:space-around;
+}
+.btn{
+     display: inline-block;
+	 background: #0d0d0d;
+	 color: #fff;
+	 padding: 8px 30px ;
+	 margin: 30px 0;
+	 border-radius: 30px;
+	 transition : background 0.5s;
+	 text-decoration: none; 
+	 align-items: center;
+}
+.small-container{
+     max-width: 1080px;
+	 margin:auto;
+	 padding-left: 25px;
+	 padding-right: 25px;
+}
+.col{
+    flex-basis: 25%;
+	padding: 50px;
+	min-width: 200px;
+	margin-bottom: 50px;
+	transition: transform 0.5s;
+	background-position: center center;
+	 background-repeat: no-repeat;
+	 background-size: cover;
+	 position: relative;
+	
+}
+.col img {
+     width: 100%;
+	 height: 100%;
+	 float: left;
+	 object-fit: cover;
+	 background-position: center center;
+	 background-repeat: no-repeat;
+	 background-size: cover;
+	 position: relative;
+	 float: left;
+    width:  200px;
+    height: 200px;
+    object-fit: cover;
+	 
+}
+.rating{
+	color: black;
+}
+.checked {
+  color: red;
+}
+.btn:hover{
+     background: #563434;
+     text-decoration: none;
+}	 
+.col:hover{
+	 transform: translateY(-5px);
+}
+ img1 {
+    float: left;
+    width:  200px;
+    height: 200px;
+    object-fit: cover;
+}
+	 
+	
+	 
+	 
+	 
+	 
+	 
+	 
+	
+	

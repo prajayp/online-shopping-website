@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<head>
+<title>cart</title>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+::selection{
+  color: #000;
+  background: rgb(153, 134, 134);
+}
+* {
+  box-sizing: border-box;
+}
+    #cart table{
+        width: 80%;
+        border-collapse: collapse;
+        table-layout:fixed;
+        white-space:nowrap;
+        margin-left: 120px;  
+    }
+    #cart table img{
+        width:60px;
+    }
+    #cart table thead{
+        border: 1px solid rgb(121, 114, 114);
+        border-left:none;
+        border-right: none;
+    }
+    #cart table thead td{
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 13px;
+        padding: 18px 0;
+    }
+    #cart table td:nth-child(1){
+        width:60px;
+        text-align: center;
+    }
+    #cart table td:nth-child(2){
+        width: 150px;
+        text-align: center;
+    }
+    #cart table td:nth-child(3){
+        width: 200px;
+        text-align: center;
+    }
+    #cart table td:nth-child(4){
+        width: 150px;
+        text-align: center;
+    }
+    #cart table td:nth-child(5){
+        width: 100px;
+        text-align: center;
+    }
+    #cart table td:nth-child(5) input{
+        width: 70px;
+        padding: 10px 5px 10px 15px;
+    }
+    #cart table tbody tr td{
+        padding-top: 15px;
+    }
+    #cart table tbody td{
+        font-size: 13px;
+    }
+    #cart-add{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .coupon{
+        width: 50%;
+        margin-bottom: 30px;
+        margin-left: 350px;
+        margin-top: 20px;
+
+    }
+    .coupon h3,
+    #subtotal h3{
+        padding-bottom: 15px;
+
+    }
+    .coupon input{
+        padding: 10px 20px;
+        outline: none;
+        width: 60%;
+        margin-right: 10px;
+        border: 1px solid rgb(122, 120, 120);
+    }
+    .coupon button,
+    #subtotal button {
+        background-color: #088178;
+        color: white;
+        padding: 12px 20px;
+    }
+    #subtotal{
+        width: 50%;
+        margin-bottom: 30px;
+        border: 1px solid rgb(129, 123, 123);
+        padding: 30px;
+        margin-left: 250px;
+        margin-top: 20px;
+
+    }
+    #subtotal table{
+        border-collapse: collapse;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    #subtotal table td{
+        width: 50%;
+        border: 1px solid rgb(88, 80, 80);
+        padding: 10px;
+        font-size: 13px;
+        
+    }
+    .design{
+        width: 100%;
+        margin-bottom: 1px;
+        height: 100px;
+        color: black;
+        align-content: center;
+        padding: 10px 50px 0px 570px;
+    }
+</style>
+</head>
+<body>
+    <div class="design"><h1>Cart</h1>
+    <br>
+     </div>
+     <marquee scrollamount="35"><h1  style="color:rgba(245, 7, 7, 0.747);" align ="left">Apply Your Coupon code & SAVE upto 99%!</h1></marquee>
+<section id="cart" class="section">
+    <table width="120%">
+        <thead>
+            <tr>
+                <td>S.No</td>
+                <td>Image</td>
+                <td>Product</td>
+                <td>Price</td>
+                <td>Quantity</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td><img src="https://5.imimg.com/data5/ANDROID/Default/2021/10/CV/OA/EY/91259944/product-jpeg-500x500.jpg" alt="" ></td>
+                <td>Allen Solly Casual T-Shirt</td>
+                <td>699</td>
+                <td><input type="number" value="1"></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td><img src="https://images.meesho.com/images/products/28459431/6j1c9_512.jpg" alt=""></td>
+                <td>Allen Solly Casual Shirt</td>
+                <td>1999</td>
+                <td><input type="number" value="1"></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td><img src="https://5.imimg.com/data5/ANDROID/Default/2021/12/WJ/PG/XS/23374730/product-jpeg-500x500.jpg" alt=""></td>
+                <td>Allen Solly Casual Shirt</td>
+                <td>899</td>
+                <td><input type="number" value="1"></td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+<section id="cart-add" class="section">
+    <div class="coupon">
+        <h3 style="margin-left: 150px;">Apply Coupon</h3>
+        <div>
+            <input type="text" placeholder="Enter Your Coupon">
+            <button class="normal">Apply</button>
+        </div>
+    </div>
+    <div id="subtotal">
+        <h3>Cart Totals</h3>
+        <table>
+            <tr>
+                <td>Cart Subtotal</td>
+                <td>899</td>
+            </tr>
+            <tr>
+                <td>Shipping</td>
+                <td>Free</td>
+            </tr>
+            <tr>
+                 <td><strong>Total</strong></td>
+                 <td><strong>899</strong></td>
+            </tr>
+        </table>
+        <button class="normal">Proceed to checkout</button>
+    </div>
+</section>
+</body>
